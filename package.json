@@ -1,0 +1,23 @@
+{
+  "name": "findle",
+  "version": "1.0.0",
+  "description": "Web application for query discussion.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepsingh11421/findle.git"
+  },
+  "author": "Deep Singh & Achintya Jaiswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepsingh11421/findle/issues"
+  },
+  "homepage": "https://github.com/deepsingh11421/findle#readme",
+  "dependencies": {
+    "git": "^0.1.5"
+  }
+}
