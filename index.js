@@ -10,13 +10,11 @@ app.set('views','./views');
 app.use(express.urlencoded());
 app.use(express.static('assets'));
 
-app.get('/',function(req,res){
-    return res.render('home');
-});
+app.use('/', require('./routes/index'));
 
 app.listen(port, function(err){
     if(err){
         console.log('Error in running the server');
     }
-    console.log('Server running on port ',port);
+    console.log('Server running on port',port);
 });
