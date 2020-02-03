@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/deepsingh11421/findle#readme",
   "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
     "git": "^0.1.5"
   }
 }
