@@ -7,12 +7,20 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const cookieParser = require('cookie-parser');
+const sassMiddleware = require('node-sass-middleware');
 const app = express();
 
 app.set('view engine','ejs');
 app.set('views','./views');
 app.use(cookieParser());
 app.use(expressLayouts);
+app.use(sassMiddleware({
+    src: './assets/scss',
+    dest: './assets/css',
+    debug: true,
+    outputStyle: 'extended',
+    prefix: '/css'
+}));
 app.set('layout extractStyles',true);
 app.set('layout extractScripts',true);
 app.use(express.urlencoded());
