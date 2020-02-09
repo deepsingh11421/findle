@@ -10,15 +10,29 @@ body {
 
         .layout-header-details {
             height: 50px;
+            margin-right: 7px;
             // padding: 15px 0px 0px 0px ;
             // background-color: red;
 
             .layout-header-user {
-                padding: 15px;
+                
+                img {
+                    margin-top: 5px;
+                    border-radius: 50%;
+                }
+                a {
+                    position: relative;
+                    top: 15px;
+                    right: 5px;
+                }
+
+                .layout-header-user-drop {
+                    display: none;
+                }
             }
 
             .layout-header-nouser {
-                padding: 7px;
+                padding: 7px 0px 7px 0px;
                 button {
                     transition: 0.3s;
                     font-family: 'Nunito', sans-serif;

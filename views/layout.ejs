@@ -8,7 +8,15 @@
             <div class="layout-header-details">
                 <% if(locals.user){ %>
                     <div class="layout-header-user">
-                        <%= locals.user.name %>
+                        <% if(user.avatar){ %>
+                            <img src="<%= user.avatar %>" class="layout-header-user-img" alt="" height="40px">
+                            <div class="layout-header-user-drop">
+                                <a href="/user/profile/<%= user.id %>"><%= user.name %></a><br>
+                                <a href="/user/destrySession">Log Out</a>
+                            </div>
+                        <% }else{ %>
+                            <a href="/user/profile/<%= user.id %>"><%= user.name %></a>
+                        <% } %>
                     </div>
                 <% }else{ %>
                     <div class="layout-header-nouser">
@@ -21,7 +29,7 @@
         <%- body %>
     
         <%- script %>
-    
+        <script src="/js/layout.js"></script>
     </body>
 </html>
 

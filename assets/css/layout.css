@@ -12,14 +12,26 @@ body .layout-header {
 
 body .layout-header .layout-header-details {
   height: 50px;
+  margin-right: 7px;
 }
 
-body .layout-header .layout-header-details .layout-header-user {
-  padding: 15px;
+body .layout-header .layout-header-details .layout-header-user img {
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+body .layout-header .layout-header-details .layout-header-user a {
+  position: relative;
+  top: 15px;
+  right: 5px;
+}
+
+body .layout-header .layout-header-details .layout-header-user .layout-header-user-drop {
+  display: none;
 }
 
 body .layout-header .layout-header-details .layout-header-nouser {
-  padding: 7px;
+  padding: 7px 0px 7px 0px;
 }
 
 body .layout-header .layout-header-details .layout-header-nouser button {
