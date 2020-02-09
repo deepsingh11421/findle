@@ -1,2 +1,6 @@
 <h1>Loaded from ejs</h1>
 <a href="/user/destroySession">LOGOUT</a>
+<% if(locals.user){ %>
+    <h1><%= locals.user.name %></h1>
+<% } %>
+

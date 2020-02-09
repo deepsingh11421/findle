@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+
+    .layout-header {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #1687ff;
+        height: 50px;
+        margin: 0px;
+
+        .layout-header-details {
+            height: 50px;
+            // padding: 15px 0px 0px 0px ;
+            // background-color: red;
+
+            .layout-header-user {
+                padding: 15px;
+            }
+
+            .layout-header-nouser {
+                padding: 7px;
+                button {
+                    transition: 0.3s;
+                    font-family: 'Nunito', sans-serif;
+                    // font-size: 1rem;
+                    height: 34px;
+                    color: white;
+                    background-color: #1687ff;
+                    border: 2px solid white;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: white;
+                    color: #1687ff;
+                }
+            }
+        }
+    }
+}

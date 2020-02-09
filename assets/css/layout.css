@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+}
+
+body .layout-header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #1687ff;
+  height: 50px;
+  margin: 0px;
+}
+
+body .layout-header .layout-header-details {
+  height: 50px;
+}
+
+body .layout-header .layout-header-details .layout-header-user {
+  padding: 15px;
+}
+
+body .layout-header .layout-header-details .layout-header-nouser {
+  padding: 7px;
+}
+
+body .layout-header .layout-header-details .layout-header-nouser button {
+  transition: 0.3s;
+  font-family: 'Nunito', sans-serif;
+  height: 34px;
+  color: white;
+  background-color: #1687ff;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body .layout-header .layout-header-details .layout-header-nouser button:hover {
+  background-color: white;
+  color: #1687ff;
+}

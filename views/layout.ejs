@@ -1,10 +1,27 @@
 <html>
-
+    <!-- font-family: 'Nunito', sans-serif; -->
+    <link rel="stylesheet" href="/css/layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <%- style %>
-    <h1>LAYOUT</h1>
-    <%- body %>
-
-    <%- script %>
-
-
+    <body>
+        <div class="layout-header">
+            <div class="layout-header-details">
+                <% if(locals.user){ %>
+                    <div class="layout-header-user">
+                        <%= locals.user.name %>
+                    </div>
+                <% }else{ %>
+                    <div class="layout-header-nouser">
+                        <a href="/user/signIn"><button>Sign In</button></a>&ensp;
+                        <a href="/user/signUp"><button>Sign Up</button></a>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+        <%- body %>
+    
+        <%- script %>
+    
+    </body>
 </html>
+
