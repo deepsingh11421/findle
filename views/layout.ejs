@@ -9,13 +9,13 @@
                 <% if(locals.user){ %>
                     <div class="layout-header-user">
                         <% if(user.avatar){ %>
-                            <img src="<%= user.avatar %>" class="layout-header-user-img" alt="" height="40px">
-                            <div class="layout-header-user-drop">
-                                <a href="/user/profile/<%= user.id %>"><%= user.name %></a><br>
-                                <a href="/user/destrySession">Log Out</a>
+                            <img src="<%= user.avatar %>" class="layout-header-user-img" onclick="show()" height="40px">
+                            <div id="user-drop" class="layout-header-user-drop">
+                                <a href="/user/profile/<%= user.id %>"><%= user.name %></a>
+                                <a href="/user/destroySession">Log Out</a>
                             </div>
                         <% }else{ %>
-                            <a href="/user/profile/<%= user.id %>"><%= user.name %></a>
+                            <a name="layout-header-user-a" href="/user/profile/<%= user.id %>"><%= user.name %></a>
                         <% } %>
                     </div>
                 <% }else{ %>
@@ -29,7 +29,7 @@
         <%- body %>
     
         <%- script %>
-        <script src="/js/layout.js"></script>
+        <script src="/js/layout-drop.js"></script>
     </body>
 </html>
 

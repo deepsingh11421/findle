@@ -18,16 +18,34 @@ body .layout-header .layout-header-details {
 body .layout-header .layout-header-details .layout-header-user img {
   margin-top: 5px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-body .layout-header .layout-header-details .layout-header-user a {
+body .layout-header .layout-header-details .layout-header-user .layout-header-user-a {
   position: relative;
   top: 15px;
   right: 5px;
 }
 
 body .layout-header .layout-header-details .layout-header-user .layout-header-user-drop {
+  right: 7px;
   display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+body .layout-header .layout-header-details .layout-header-user .layout-header-user-drop a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+body .layout-header .layout-header-details .layout-header-user .layout-header-user-drop a:hover {
+  background-color: #ddd;
 }
 
 body .layout-header .layout-header-details .layout-header-nouser {
@@ -48,4 +66,8 @@ body .layout-header .layout-header-details .layout-header-nouser button {
 body .layout-header .layout-header-details .layout-header-nouser button:hover {
   background-color: white;
   color: #1687ff;
+}
+
+.show {
+  display: block !important;
 }
