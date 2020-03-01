@@ -1,9 +1,12 @@
 body {
     margin: 0px;
+    background-color: #f4f4f4;
 
     .layout-header {
         display: flex;
         justify-content: flex-end;
+        z-index: 10;
+        box-shadow: 0px 5px 20px #1687ff;
         background-color: #1687ff;
         height: 50px;
         margin: 0px;
@@ -11,8 +14,6 @@ body {
         .layout-header-details {
             height: 50px;
             margin-right: 7px;
-            // padding: 15px 0px 0px 0px ;
-            // background-color: red;
 
             .layout-header-user {
                 

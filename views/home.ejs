@@ -1,6 +1,104 @@
-<h1>Loaded from ejs</h1>
-<a href="/user/destroySession">LOGOUT</a>
-<% if(locals.user){ %>
-    <h1><%= locals.user.name %> <br></h1>
-<% } %>
+<link rel="stylesheet" href="/css/home.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
+<div class="home">
+    <section class="home-left">
+    
+    </section>
+    <section class="home-main">
+        <% if(locals.user){ %>
+            <div class="post">
+                <div class="post-default">
+                    <div class="post-default-info">
+                        <img src="<%= user.avatar %>" alt=""><span><%= user.name %></span>
+                    </div>
+                    <div class="post-default-text">
+                        What is your question?
+                    </div>
+                </div>
+            </div>        
+        <% } %>
+        <div class="post">
+            <div class="post-top">
+                What is something you will never understand?
+                Checking the size of the flex by overflowing the content
+            </div>
+            <div class="post-mid">
+                <div class="mid-info">
+                    <img src="/images/user.jpg" alt="">
+                    <span>Answered By: Username</span>
+                </div>
+                <div class="mid-text">
+                    This is the answer. sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad 
+                sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad 
+                sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad 
+                sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad 
+                sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad 
+                sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad 
+                sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad 
+                sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad 
+                sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad sadsad
+                </div> 
+            </div>
+            <div class="post-bottom">
+                <div>
+                    <a href=""><button class="post-button"><i class="far fa-thumbs-up"></i> 100</button></a>
+                    <a href=""><button class="post-button"><i class="far fa-thumbs-up fa-rotate-180"></i></button></a>
+                    <a href=""><button class="post-button"><i class="far fa-comment"></i> 43</button></a>
+                </div>
+                <div>
+                    <a href=""><button class="post-button"><i class="fas fa-ellipsis-h fa-lg"></i></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-top">
+                What is something you will never understand?
+                Checking the size of the flex by overflowing the content
+            </div>
+            <div class="post-mid">
+                <div class="mid-info">
+                    <img src="/images/user.jpg" alt="">
+                    <span>Answered By: Username</span>
+                </div>
+                <div class="mid-text">
+                    When I completed my B.Tech in 2017, I had multiple high paying job offers ranging from Rs. 42 lakhs per year in India to $150,000 in the Bay Area.
+                </div> 
+            </div>
+            <div class="post-bottom">
+                <div>
+                    <a href=""><button class="post-button"><i class="far fa-thumbs-up"></i> 100</button></a>
+                    <a href=""><button class="post-button"><i class="far fa-thumbs-up fa-rotate-180"></i></button></a>
+                    <a href=""><button class="post-button"><i class="far fa-comment"></i> 43</button></a>
+                </div>
+                <div>
+                    <a href=""><button class="post-button"><i class="fas fa-ellipsis-h fa-lg"></i></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-top">
+                What is something you will never understand?
+                Checking the size of the flex by overflowing the content
+            </div>
+            <div class="post-mid no-ans">
+                <div class="mid-text">
+                    No answers yet.
+                </div>
+            </div>
+            <div class="post-bottom">
+                <div>
+                    <a href=""><button class="post-button"><i class="fa fa-edit"></i> Answer</button></a>
+                    <a href=""><button class="post-button"><i class="fas fa-users"></i> Follow</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-right">
+        
+    </section>
+</div>

@@ -1,0 +1,128 @@
+.home {
+  font-family: "Nunito";
+  height: 500px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .home-left {
+  padding: 20px;
+  align-items: flex-start;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.home .home-main {
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  flex: 3;
+}
+
+.home .home-main .post {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  flex-direction: column;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 5px 1px lightgrey;
+}
+
+.home .home-main .post .post-default-info {
+  padding: 5px;
+}
+
+.home .home-main .post .post-default-info img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.home .home-main .post .post-default-info span {
+  margin-left: 10px;
+  position: relative;
+  top: -12px;
+  color: #5b5b5b;
+}
+
+.home .home-main .post .post-default-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b5b5b5;
+}
+
+.home .home-main .post .post-top {
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.home .home-main .post .post-mid {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.home .home-main .post .post-mid .mid-info {
+  padding: 5px;
+}
+
+.home .home-main .post .post-mid .mid-info img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.home .home-main .post .post-mid .mid-info span {
+  margin-left: 10px;
+  position: relative;
+  top: -12px;
+  color: #5b5b5b;
+}
+
+.home .home-main .post .post-mid .mid-text {
+  max-height: 95px;
+  overflow: hidden;
+}
+
+.home .home-main .post .no-ans {
+  font-weight: bold;
+  color: grey;
+}
+
+.home .home-main .post .post-bottom {
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .home-main .post .post-bottom .post-button {
+  padding: 10px;
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #5b5b5b;
+  border-radius: 20px;
+}
+
+.home .home-main .post .post-bottom .post-button i {
+  color: #1687ff;
+}
+
+.home .home-main .post .post-bottom .post-button:hover {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.home .home-right {
+  padding: 20px;
+  align-items: flex-end;
+  flex: 1;
+  box-sizing: border-box;
+}

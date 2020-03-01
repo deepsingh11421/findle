@@ -1,10 +1,13 @@
 body {
   margin: 0px;
+  background-color: #f4f4f4;
 }
 
 body .layout-header {
   display: flex;
   justify-content: flex-end;
+  z-index: 10;
+  box-shadow: 0px 5px 20px #1687ff;
   background-color: #1687ff;
   height: 50px;
   margin: 0px;

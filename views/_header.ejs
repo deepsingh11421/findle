@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/css/_header.css">
+
+<div class="layout-header">
+    <div class="layout-header-details">
+        <% if(locals.user){ %>
+            <div class="layout-header-user">
+                <% if(user.avatar){ %>
+                    <img src="<%= user.avatar %>" class="layout-header-user-img" onclick="show()" height="40px">
+                    <div id="user-drop" class="layout-header-user-drop">
+                        <a href="/user/profile/<%= user.id %>"><%= user.name %></a>
+                        <a href="/user/destroySession">Log Out</a>
+                    </div>
+                <% }else{ %>
+                    <a name="layout-header-user-a" href="/user/profile/<%= user.id %>"><%= user.name %></a>
+                <% } %>
+            </div>
+        <% }else{ %>
+            <div class="layout-header-nouser">
+                <a href="/user/signIn"><button>Sign In</button></a>&ensp;
+                <a href="/user/signUp"><button>Sign Up</button></a>
+            </div>
+        <% } %>
+    </div>
+</div>
