@@ -9,18 +9,19 @@
     <section class="home-left">
     
     </section>
-    <section class="home-main">
+    <section class="home-main">   
         <% if(locals.user){ %>
             <div class="post">
                 <div class="post-default">
                     <div class="post-default-info">
                         <img src="<%= user.avatar %>" alt=""><span><%= user.name %></span>
                     </div>
-                    <div class="post-default-text">
-                        What is your question?
-                    </div>
+                    <form action="" method="POST" style="margin: 0px;">
+                        <input type="text" class="post-default-text" placeholder="What is your question?">
+                        <input type="submit" class="post-default-button" value="POST">
+                    </form>
                 </div>
-            </div>        
+            </div>
         <% } %>
         <div class="post">
             <div class="post-top">

@@ -1,5 +1,4 @@
 .home {
-    // background-color: grey;
     font-family: 'Nunito', ;
     height: 500px;
     width: 100%;
@@ -8,10 +7,25 @@
     display: flex;
     justify-content: space-between;
 
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #b5b5b5;
+        font-family: 'Nunito', ;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #b5b5b5;
+        font-family: 'Nunito', ;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #b5b5b5;
+        font-family: 'Nunito', ;
+      }
+
     .home-left {
         padding: 20px;
         align-items: flex-start;
-        // background-color: white;
         flex: 1;
         box-sizing: border-box;
     }
@@ -19,7 +33,6 @@
         padding: 20px;
         box-sizing: border-box;
         align-items: center;
-        // background-color: lightgrey;
         flex: 3;
 
         .post {
@@ -50,7 +63,27 @@
             .post-default-text {
                 font-size: 1.2rem;
                 font-weight: bold;
-                color: #b5b5b5;
+                font-family: 'Nunito', ;
+                color: black;
+                border: none;
+                width: 100%;
+                margin: 5px;
+            }
+            .post-default-button {
+                margin: 5px;
+                transition: 0.3s;
+                font-family: 'Nunito', sans-serif;
+                height: 34px;
+                color: white;
+                background-color: #1687ff;
+                border: 2px solid #1687ff;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .post-default-button:hover {
+                background-color: white;
+                color: #1687ff;
+                border: 2px solid #1687ff;
             }
 
             .post-top {
@@ -112,7 +145,6 @@
     .home-right {
         padding: 20px;
         align-items: flex-end;
-        // background-color: cyan;
         flex: 1;
         box-sizing: border-box;
     }
