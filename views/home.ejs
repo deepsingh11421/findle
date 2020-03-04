@@ -24,7 +24,9 @@
             </div>
         <% } %>
         <div id="list-post">
-            <%- include('_post') -%>
+            <% for(post of posts){ %>
+                <%- include('_post') -%>
+            <% } %>
         </div>
     </section>
     <section class="home-right">
