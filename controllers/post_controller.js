@@ -20,3 +20,15 @@ module.exports.create = function(req,res){
         });
     });
 }
+
+module.exports.display = async function(req,res){
+    try{
+        let post = await Post.findById(req.params.id).populate('user');
+        
+        return res.render('post', {
+            post: post
+        });
+    }catch(err){
+        console.log("Error: ",err);
+    }
+}

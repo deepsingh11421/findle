@@ -47,6 +47,11 @@
             border: 2px solid lightgrey;
             box-shadow: 0px 0px 5px 1px lightgrey;
 
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
             .post-default-info {
                 padding: 5px;
                 img {

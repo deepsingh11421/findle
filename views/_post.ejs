@@ -1,17 +1,21 @@
 <div class="post">
-    <div class="post-top">
-        <%= post.content %>
-    </div>
-    <% if(post.answer != 0){ %>
-        <div class="post-mid">
-            <div class="mid-info">
-                <img src="/images/user.jpg" alt="">
-                <span>Answered By: Username</span>
-            </div>
-            <div class="mid-text">
-                <%= post.answer %>
-            </div> 
+    <a href="/post/<%= post._id %>">
+        <div class="post-top">
+            <%= post.content %>
         </div>
+    </a>
+    <% if(post.answer != 0){ %>
+        <a href="">
+            <div class="post-mid">
+                <div class="mid-info">
+                    <img src="/images/user.jpg" alt="">
+                    <span>Answered By: Username</span>
+                </div>
+                <div class="mid-text">
+                    <%= post.answer %>
+                </div> 
+            </div>
+        </a>
         <div class="post-bottom">
             <div>
                 <a href=""><button class="post-button"><i class="far fa-thumbs-up"></i> 100</button></a>
