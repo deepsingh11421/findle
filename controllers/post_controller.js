@@ -19,7 +19,4 @@ module.exports.create = function(req,res){
             }
         });
     });
-    
-    // console.log("Post created");
-    // return res.redirect('back');
 }
